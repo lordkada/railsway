@@ -11,6 +11,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20110826172948) do
+
+  create_table "computers", :force => true do |t|
+    t.integer "abstract_model_id"
+    t.integer "ram"
+    t.string  "processor"
+    t.integer "disk"
+  end
+
+  create_table "monitor", :force => true do |t|
+    t.integer "abstract_model_id"
+    t.integer "inchs"
+  end
+
+  create_table "products", :force => true do |t|
+    t.string   "type"
+    t.string   "name"
+    t.string   "price"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

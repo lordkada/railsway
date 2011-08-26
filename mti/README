@@ -1,1 +1,11 @@
 Stand-alone experiments related to Multi-Instance-Inheritance data model
+
+Goal: building a data model where products common attributes (ie the name or the price) go to a common table (PRODUCTS table) while specific ones are stored into details tables (COMPUTERS or MONITORS)
+
+TABLES
+======
+
+products - base table - it contains attributes to all products, such as the name or the price
+
+computers - extension table A - it contains attributes specific to computer items
+monitors - extension table B - it contains specific attributes 
