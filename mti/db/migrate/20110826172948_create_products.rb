@@ -12,19 +12,19 @@ class CreateProducts < ActiveRecord::Migration
 
     end
     
-    create_table :computers do |t|
+    create_table :computer_specifics do |t|
 
-      t.integer :abstract_model_id
+      t.integer :product_id
       t.integer :ram
       t.string  :processor
       t.integer :disk
       
     end
 
-    create_table :monitor do |t|
+    create_table :display_specifics do |t|
 
-      t.integer :abstract_model_id
-      t.integer :inchs
+      t.integer :product_id
+      t.integer :size
       
     end
     
@@ -33,8 +33,8 @@ class CreateProducts < ActiveRecord::Migration
   def self.down
   
     drop_table :products
-    drop_table :computers
-    drop_table :monitor
+    drop_table :computer_specific
+    drop_table :display_specific
       
   end
   

@@ -13,16 +13,16 @@
 
 ActiveRecord::Schema.define(:version => 20110826172948) do
 
-  create_table "computers", :force => true do |t|
-    t.integer "abstract_model_id"
+  create_table "computer_specifics", :force => true do |t|
+    t.integer "product_id"
     t.integer "ram"
     t.string  "processor"
     t.integer "disk"
   end
 
-  create_table "monitor", :force => true do |t|
-    t.integer "abstract_model_id"
-    t.integer "inchs"
+  create_table "display_specifics", :force => true do |t|
+    t.integer "product_id"
+    t.integer "size"
   end
 
   create_table "products", :force => true do |t|
