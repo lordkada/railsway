@@ -1,5 +1,5 @@
 class Display < Product
   
-  relate_to_details
+  include MultipleInheritance
   
 end
