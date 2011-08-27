@@ -9,3 +9,10 @@ products - base table - it contains attributes to all products, such as the name
 
 computer_specific - it contains attributes specific to computer items
 monitor_specific - it contains specific attributes 
+
+EXECUTE TESTS
+=============
+
+1- $ bundle install
+
+2- $ bundle exec rspec spec
